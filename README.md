@@ -7,4 +7,4 @@ For this first coursework we used a mixture of Gaussians to solve the problems p
 
 <b>Code and Data</b>
 
-The code is written using Matlab and test images have been used under Creative Commons license.
+The code is written using Matlab and can be found in the apples.m script file. Test images have been used under Creative Commons license.
