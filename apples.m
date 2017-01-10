@@ -116,7 +116,7 @@ end
 
 %==========================================================================
 %==========================================================================
-
+% Functions
 %==========================================================================
 %==========================================================================
 
@@ -154,7 +154,7 @@ for(cData = 1:nData)
         boundValue = boundValue + thisQ(k) * log(mixGaussEst.weight(k) * getGaussProb(thisData, mixGaussEst.mean(:,k),mixGaussEst.cov(:,:,k))/thisQ(k));
     end
 
-    bound = bound+boundValue;        
+    bound = bound + boundValue;        
 end;
 
 end
@@ -228,7 +228,7 @@ end
 %subroutine to return gaussian probabilities
 function prob = getGaussProb(x,mean,var)
 
-prob = exp(-0.5*((x-mean)'*inv(var)*(x-mean)));
-prob = prob/ (2*pi)*det(var).^(1/2);
+    prob = exp(-0.5*((x-mean)'*inv(var)*(x-mean)));
+    prob = prob/ (2*pi)*det(var).^(1/2);
 
 end
